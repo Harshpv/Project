@@ -1,0 +1,23 @@
+##** KISS
+
+Mappings:
+
+user-group: 1:many
+group-event: 1:1
+event- user-map: 1:many
+event- exclusion-map: 1:many
+
+UseCase:
+
+User-
+- register himself
+- creates event that makes him event admin
+    - invites/removes other users to event
+    - schedules or start an instant event
+    - cancels event
+- user sends/receives secret message from other user once event starts
+- user updates/acks the status of gift once event starts
+- update address for an event
+
+todo:
+complete user register part using oauth
